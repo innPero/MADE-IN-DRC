@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#133b35">
+  <meta name="description" content="Made in DRC : découvrez la production congolaise et échangez avec ses producteurs. Prototype interactif.">
+  <title>Made in DRC — La production congolaise, sans frontières</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <div class="demo-bar">PROTOTYPE INTERACTIF <span>· Données fictives · Échanges enregistrés uniquement sur cet appareil</span></div>
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="Made in DRC, accueil"><img src="assets/mark.svg" width="39" height="39" alt=""><span>MADE IN <b>DRC</b><small>DU CONGO AU MONDE</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Afficher le menu">☰</button>
+    <nav id="navigation" aria-label="Navigation principale">
+      <a href="#/catalogue" data-nav="catalogue">Marketplace</a>
+      <a href="#/partenaires" data-nav="partenaires">Partenaires</a>
+      <a href="#/assistant" data-nav="assistant">Assistant</a>
+      <a class="button small" href="#/espace" data-nav="espace">Espace vendeur <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><div class="footer-brand">MADE IN <b>DRC</b><p>Des talents locaux.<br>Des possibilités internationales.</p></div><div><a href="#/catalogue">Explorer le catalogue</a><a href="#/partenaires">Trouver un partenaire</a><a href="#/espace">Présenter mon activité</a><a href="#/demandes">Mes demandes de démonstration</a></div><p class="footer-note">Démonstration de mise en relation.<br>Aucun paiement, expédition ou échange réel.<br>Les prix et profils sont des exemples.</p></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="contact-dialog" aria-labelledby="contact-title"></dialog>
+  <noscript>Activez JavaScript pour utiliser ce prototype. Aucune installation n’est nécessaire.</noscript>
+</body>
+</html>

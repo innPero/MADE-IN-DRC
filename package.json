@@ -1,0 +1,11 @@
+{
+  "name": "made-in-drc-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prototype local de marketplace congolaise et d’orientation logistique",
+  "scripts": {
+    "test": "node --test tests/prototype.test.cjs",
+    "check": "node --check app.js && node --check data.js"
+  },
+  "engines": { "node": ">=20" }
+}
