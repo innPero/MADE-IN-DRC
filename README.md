@@ -92,7 +92,13 @@ Ces tests utilisent un DOM minimal simulé : ils ne valident pas le rendu, l’a
 
 ## Mise en ligne
 
-Le code est prêt à être servi par un hébergement statique. Le dépôt seul ne constitue pas une URL de marketplace en ligne. **Aucun hébergement n’est activé par ce prototype.** L’activation de GitHub Pages, ou le choix d’un autre hébergement, constitue une étape distincte.
+Le dépôt inclut un workflow GitHub Actions (`.github/workflows/deploy-pages.yml`) qui publie automatiquement le prototype sur GitHub Pages à chaque push sur `main`, et peut aussi être lancé manuellement.
+
+Pour activer la publication :
+
+1. Ouvrez **Settings → Pages** dans GitHub.
+2. Dans **Build and deployment**, choisissez **Source: GitHub Actions**.
+3. Poussez sur `main` (ou lancez le workflow manuellement) puis récupérez l’URL publiée sur la page **Actions** ou **Pages**.
 
 Ne placez jamais de clés privées, mots de passe ou documents professionnels confidentiels dans ce dépôt ou dans le JavaScript envoyé au navigateur.
 
